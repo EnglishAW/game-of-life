@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>testing Preact</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body>
+        <div id="app"></div>
+        <script>
+            // loading the bundle and making sure we're not using cache
+            var rnd = new Date().getTime()
+            var b = document.createElement('script')
+            b.src = 'dist/bundle.js'
+            b.type = 'text/javascript'
+            document.body.appendChild(b)
+        </script>
+    </body>
+</html>
