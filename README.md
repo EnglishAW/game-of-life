@@ -1,5 +1,5 @@
 # game-of-life
-Game of Life in Preact
+Game of Life in Preact: https://englishaw.github.io/game-of-life/
 
 React/Preact isn't really meant to handle things like a controlled render loop so this is a bit of a hack but works for a simple Game of Life example. Inorder to create a game loop we will queue the next game step on render, if the game is running and a game step has not already been queued. We use useRefs to avoid unneeded renders when managing the game step queuing.
 
